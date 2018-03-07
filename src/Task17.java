@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Task16 {
+public class Task17 {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
@@ -10,7 +10,7 @@ public class Task16 {
 
             for (colCount=1;colCount<=lineCount;++colCount){
                 if(colCount == 1 || lineCount==colCount || lineCount==lineQuantity){
-                    System.out.print("*");
+                    System.out.print(colCount);
                 }else{
                     System.out.print(" ");
                 }
