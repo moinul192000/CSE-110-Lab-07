@@ -5,13 +5,13 @@ public class Task11 {
 
         System.out.println("Please type quantity of lines");
         int lineQuantity = sc.nextInt();
-
+        int spaceCount;
         for (int lineCount = 1; lineCount <= lineQuantity; ++lineCount){
 
-            for (int spaceCount = 1; spaceCount <= (lineQuantity-lineCount); ++spaceCount){
+            for (spaceCount = 1; spaceCount <= (lineQuantity-lineCount); ++spaceCount){
                 System.out.print(" ");
             }
-            for (int columnCount = lineQuantity; lineCount<=columnCount ; --columnCount){
+            for (int columnCount = lineQuantity; columnCount>=lineCount ; --columnCount){
                 System.out.print(columnCount);
             }
 

@@ -4,13 +4,13 @@ public class Main {
 
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        double A = sc.nextDouble();
-        double B = sc.nextDouble();
-        double C = sc.nextDouble();
+        int A = sc.nextInt();
+        int B = sc.nextInt();
+        int C = sc.nextInt();
+        int D = sc.nextInt();
 
-        double media = A/10*2 + B/10*2 + C/10*5;
-
-
+        int differencia = (A*B - C*D);
+        System.out.println("DIFERENCA = "+differencia);
     }
 
 }
