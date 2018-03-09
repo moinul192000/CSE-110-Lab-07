@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Task20 {
+public class Task25 {
     public static void main(String args[]){
         Scanner sc = new Scanner(System.in);
 
@@ -10,12 +10,11 @@ public class Task20 {
             for (int spCount=1; spCount <= lineQuantity - lineCount; spCount++){
                 System.out.print(" ");
             }
-            for (int colCount = 1; colCount <= 2*lineCount - 1; colCount++){
-                if(colCount == 1|| colCount == 2*lineCount - 1 || lineCount == lineQuantity){
-                    System.out.print("*");
-                }else {
-                    System.out.print(" ");
-                }
+            for(int n = 1; n <= lineCount;n++){
+                System.out.print(n);
+            }
+            for(int n = lineCount-1 ; n >= 1;n--){
+                System.out.print(n);
             }
             System.out.println(); //Print Enter after every line of Stars.
         }
